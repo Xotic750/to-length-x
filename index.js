@@ -1,24 +1,24 @@
 /**
  * @file
- * <a href="https://travis-ci.org/Xotic750/find-last-index-x"
+ * <a href="https://travis-ci.org/Xotic750/to-length-x"
  * title="Travis status">
  * <img
- * src="https://travis-ci.org/Xotic750/find-last-index-x.svg?branch=master"
+ * src="https://travis-ci.org/Xotic750/to-length-x.svg?branch=master"
  * alt="Travis status" height="18">
  * </a>
- * <a href="https://david-dm.org/Xotic750/find-last-index-x"
+ * <a href="https://david-dm.org/Xotic750/to-length-x"
  * title="Dependency status">
- * <img src="https://david-dm.org/Xotic750/find-last-index-x.svg"
+ * <img src="https://david-dm.org/Xotic750/to-length-x.svg"
  * alt="Dependency status" height="18"/>
  * </a>
  * <a
- * href="https://david-dm.org/Xotic750/find-last-index-x#info=devDependencies"
+ * href="https://david-dm.org/Xotic750/to-length-x#info=devDependencies"
  * title="devDependency status">
- * <img src="https://david-dm.org/Xotic750/find-last-index-x/dev-status.svg"
+ * <img src="https://david-dm.org/Xotic750/to-length-x/dev-status.svg"
  * alt="devDependency status" height="18"/>
  * </a>
- * <a href="https://badge.fury.io/js/find-last-index-x" title="npm version">
- * <img src="https://badge.fury.io/js/find-last-index-x.svg"
+ * <a href="https://badge.fury.io/js/to-length-x" title="npm version">
+ * <img src="https://badge.fury.io/js/to-length-x.svg"
  * alt="npm version" height="18">
  * </a>
  *
@@ -45,7 +45,7 @@
  * @author Xotic750 <Xotic750@gmail.com>
  * @copyright  Xotic750
  * @license {@link <https://opensource.org/licenses/MIT> MIT}
- * @module find-last-index-x
+ * @module to-length-x
  */
 
 /*jslint maxlen:80, es6:true, white:true */

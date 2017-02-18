@@ -41,28 +41,32 @@
  * `es6.shim.js` provides compatibility shims so that legacy JavaScript engines
  * behave as closely as possible to ECMAScript 6 (Harmony).
  *
- * @version 1.0.5
+ * @version 1.1.0
  * @author Xotic750 <Xotic750@gmail.com>
  * @copyright  Xotic750
  * @license {@link <https://opensource.org/licenses/MIT> MIT}
  * @module to-length-x
  */
 
-/*jslint maxlen:80, es6:true, white:true */
+/* jslint maxlen:80, es6:true, white:true */
 
-/*jshint bitwise:true, camelcase:true, curly:true, eqeqeq:true, forin:true,
-  freeze:true, futurehostile:true, latedef:true, newcap:true, nocomma:true,
-  nonbsp:true, singleGroups:true, strict:true, undef:true, unused:true,
-  es3:true, esnext:true, plusplus:true, maxparams:1, maxdepth:1,
-  maxstatements:6, maxcomplexity:3 */
+/* jshint bitwise:true, camelcase:true, curly:true, eqeqeq:true, forin:true,
+   freeze:true, futurehostile:true, latedef:true, newcap:true, nocomma:true,
+   nonbsp:true, singleGroups:true, strict:true, undef:true, unused:true,
+   es3:false, esnext:true, plusplus:true, maxparams:1, maxdepth:1,
+   maxstatements:3, maxcomplexity:2 */
 
-/*global require, module */
+/* eslint strict: 1, max-statements: 1 */
 
-;(function () {
+/* global require, module */
+
+;(function () { // eslint-disable-line no-extra-semi
+
   'use strict';
 
   var toInteger = require('to-integer-x');
   var MAX_SAFE_INTEGER = Number.MAX_SAFE_INTEGER;
+  var zero = 0;
 
   /**
    * Converts `value` to an integer suitable for use as the length of an
@@ -79,8 +83,8 @@
    */
   module.exports = function toLength(value) {
     var len = toInteger(value);
-    if (len <= 0) {
-      return 0;
+    if (len <= zero) {
+      return zero;
     } // includes converting -0 to +0
     if (len > MAX_SAFE_INTEGER) {
       return MAX_SAFE_INTEGER;

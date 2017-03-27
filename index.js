@@ -22,13 +22,13 @@
  * alt="npm version" height="18">
  * </a>
  *
- * ToLength converts argument to an integer suitable for use as the length of an array-like object.
+ * ES6-compliant shim for ToLength.
  *
  * Requires ES3 or above.
  *
  * @see {@link http://www.ecma-international.org/ecma-262/6.0/#sec-tolength|7.1.15 ToLength ( argument )}
  *
- * @version 1.1.1
+ * @version 1.1.2
  * @author Xotic750 <Xotic750@gmail.com>
  * @copyright  Xotic750
  * @license {@link <https://opensource.org/licenses/MIT> MIT}

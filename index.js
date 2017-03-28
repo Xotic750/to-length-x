@@ -28,14 +28,14 @@
  *
  * @see {@link http://www.ecma-international.org/ecma-262/6.0/#sec-tolength|7.1.15 ToLength ( argument )}
  *
- * @version 1.1.2
+ * @version 1.2.0
  * @author Xotic750 <Xotic750@gmail.com>
  * @copyright  Xotic750
  * @license {@link <https://opensource.org/licenses/MIT> MIT}
  * @module to-length-x
  */
 
-/* eslint strict: 1, max-statements: 1 */
+/* eslint strict: 1 */
 
 /* global module */
 
@@ -59,7 +59,7 @@
    * toLength(Infinity); // Number.MAX_SAFE_INTEGER
    * toLength('3'); // 3
    */
-  module.exports = function toLength(value) {
+  module.exports = function ToLength(value) {
     var len = toInteger(value);
     if (len <= 0) {
       return 0;

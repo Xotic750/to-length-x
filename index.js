@@ -28,45 +28,41 @@
  *
  * @see {@link http://www.ecma-international.org/ecma-262/6.0/#sec-tolength|7.1.15 ToLength ( argument )}
  *
- * @version 1.2.0
+ * @version 1.3.0
  * @author Xotic750 <Xotic750@gmail.com>
  * @copyright  Xotic750
  * @license {@link <https://opensource.org/licenses/MIT> MIT}
  * @module to-length-x
  */
 
-/* eslint strict: 1 */
+'use strict';
 
-/* global module */
+var toInteger = require('to-integer-x');
+var MAX_SAFE_INTEGER = require('max-safe-integer');
 
-;(function () { // eslint-disable-line no-extra-semi
+/**
+ * Converts `value` to an integer suitable for use as the length of an
+ * array-like object.
+ *
+ * @param {*} value - The value to convert.
+ * @returns {number} Returns the converted integer.
+ * @example
+ * var toLength = require('to-length-x');
+ * toLength(3); // 3
+ * toLength(Number.MIN_VALUE); // 0
+ * toLength(Infinity); // Number.MAX_SAFE_INTEGER
+ * toLength('3'); // 3
+ */
+module.exports = function ToLength(value) {
+  var len = toInteger(value);
+  // includes converting -0 to +0
+  if (len <= 0) {
+    return 0;
+  }
 
-  'use strict';
+  if (len > MAX_SAFE_INTEGER) {
+    return MAX_SAFE_INTEGER;
+  }
 
-  var toInteger = require('to-integer-x');
-  var MAX_SAFE_INTEGER = 9007199254740991;
-
-  /**
-   * Converts `value` to an integer suitable for use as the length of an
-   * array-like object.
-   *
-   * @param {*} value The value to convert.
-   * @return {number} Returns the converted integer.
-   * @example
-   * var toLength = require('to-length-x');
-   * toLength(3); // 3
-   * toLength(Number.MIN_VALUE); // 0
-   * toLength(Infinity); // Number.MAX_SAFE_INTEGER
-   * toLength('3'); // 3
-   */
-  module.exports = function ToLength(value) {
-    var len = toInteger(value);
-    if (len <= 0) {
-      return 0;
-    } // includes converting -0 to +0
-    if (len > MAX_SAFE_INTEGER) {
-      return MAX_SAFE_INTEGER;
-    }
-    return len;
-  };
-}());
+  return len;
+};

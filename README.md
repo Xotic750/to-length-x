@@ -24,7 +24,7 @@
 ES6-compliant shim for ToLength.
 
 **See**: [7.1.15 ToLength ( argument )](http://www.ecma-international.org/ecma-262/6.0/#sec-tolength)  
-**Version**: 1.4.0  
+**Version**: 2.0.0  
 **Author**: Xotic750 <Xotic750@gmail.com>  
 **License**: [MIT](&lt;https://opensource.org/licenses/MIT&gt;)  
 **Copyright**: Xotic750  

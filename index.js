@@ -1,7 +1,7 @@
 /**
  * @file ES6-compliant shim for ToLength.
  * @see {@link http://www.ecma-international.org/ecma-262/6.0/#sec-tolength|7.1.15 ToLength ( argument )}
- * @version 2.0.0
+ * @version 2.0.1
  * @author Xotic750 <Xotic750@gmail.com>
  * @copyright  Xotic750
  * @license {@link <https://opensource.org/licenses/MIT> MIT}
@@ -26,7 +26,7 @@ var MAX_SAFE_INTEGER = require('max-safe-integer');
  * toLength(Infinity); // Number.MAX_SAFE_INTEGER
  * toLength('3'); // 3
  */
-module.exports = function ToLength(value) {
+module.exports = function toLength(value) {
   var len = toInteger(value);
   // includes converting -0 to +0
   if (len <= 0) {

@@ -1,7 +1,7 @@
 {
   "name": "to-length-x",
-  "version": "2.1.0",
-  "description": "ES6-compliant shim for ToLength.",
+  "version": "3.0.0",
+  "description": "Shim for ToLength.",
   "homepage": "https://github.com/Xotic750/to-length-x",
   "author": {
     "name": "Graham Fairweather",
@@ -9,7 +9,6 @@
   },
   "copyright": "Copyright (c) 2015-2017",
   "keywords": [
-    "es6",
     "toLength",
     "module",
     "javascript",
@@ -30,7 +29,7 @@
   },
   "dependencies": {
     "max-safe-integer": "^1.0.1",
-    "to-integer-x": "^2.1.0"
+    "to-integer-x": "^3.0.0"
   },
   "devDependencies": {
     "@xotic750/eslint-config-standard-x": "^2.2.1",

@@ -1,6 +1,5 @@
-import toInteger, {toInteger2016} from 'to-integer-x';
+import toInteger, { toInteger2016 } from 'to-integer-x';
 import MAX_SAFE_INTEGER from 'max-safe-integer';
-
 /**
  * Converts `value` to an integer suitable for use as the length of an
  * array-like object. (ES2016).
@@ -8,10 +7,10 @@ import MAX_SAFE_INTEGER from 'max-safe-integer';
  * @param {*} value - The value to convert.
  * @returns {number} Returns the converted integer.
  */
-export function toLength2016(value) {
-  const len = toInteger2016(value);
 
-  // includes converting -0 to +0
+export function toLength2016(value) {
+  var len = toInteger2016(value); // includes converting -0 to +0
+
   if (len <= 0) {
     return 0;
   }
@@ -22,7 +21,6 @@ export function toLength2016(value) {
 
   return len;
 }
-
 /**
  * Converts `value` to an integer suitable for use as the length of an
  * array-like object. (ES2018).
@@ -30,10 +28,10 @@ export function toLength2016(value) {
  * @param {*} value - The value to convert.
  * @returns {number} Returns the converted integer.
  */
-export default function toLength2018(value) {
-  const len = toInteger(value);
 
-  // includes converting -0 to +0
+export default function toLength2018(value) {
+  var len = toInteger(value); // includes converting -0 to +0
+
   if (len <= 0) {
     return 0;
   }
@@ -44,3 +42,5 @@ export default function toLength2018(value) {
 
   return len;
 }
+
+//# sourceMappingURL=to-length-x.esm.js.map

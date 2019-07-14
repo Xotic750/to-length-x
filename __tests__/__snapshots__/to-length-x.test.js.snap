@@ -1,0 +1,5 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`toLength toLength2016 should throw for uncoercible 1`] = `"No default value"`;
+
+exports[`toLength toLength2018 should throw for uncoercible 1`] = `"No default value"`;

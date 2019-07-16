@@ -63,16 +63,15 @@ describe('toLength', function() {
       const negatives = [-0, -1, -42, -Infinity];
 
       negatives.forEach(function(negative) {
-        /* eslint-disable-next-line compat/compat */
         expect(Object.is(0, toLength2016(negative))).toBe(true, `${negative} coerces to +0`);
       });
     });
 
     it('should clamp to MAX_SAFE_INTEGER', function() {
       expect.assertions(2);
-      /* eslint-disable-next-line compat/compat */
+
       expect(toLength2016(Number.MAX_SAFE_INTEGER + 1)).toBe(Number.MAX_SAFE_INTEGER, '2^53 coerces to 2^53 - 1');
-      /* eslint-disable-next-line compat/compat */
+
       expect(toLength2016(Number.MAX_SAFE_INTEGER + 3)).toBe(Number.MAX_SAFE_INTEGER, '2^53 + 2 coerces to 2^53 - 1');
     });
   });
@@ -105,16 +104,15 @@ describe('toLength', function() {
       const negatives = [-0, -1, -42, -Infinity];
 
       negatives.forEach(function(negative) {
-        /* eslint-disable-next-line compat/compat */
         expect(Object.is(0, toLength(negative))).toBe(true, `${negative} coerces to +0`);
       });
     });
 
     it('should clamp to MAX_SAFE_INTEGER', function() {
       expect.assertions(2);
-      /* eslint-disable-next-line compat/compat */
+
       expect(toLength(Number.MAX_SAFE_INTEGER + 1)).toBe(Number.MAX_SAFE_INTEGER, '2^53 coerces to 2^53 - 1');
-      /* eslint-disable-next-line compat/compat */
+
       expect(toLength(Number.MAX_SAFE_INTEGER + 3)).toBe(Number.MAX_SAFE_INTEGER, '2^53 + 2 coerces to 2^53 - 1');
     });
   });

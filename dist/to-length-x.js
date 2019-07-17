@@ -2,13 +2,13 @@
 {
   "author": "Graham Fairweather",
   "copywrite": "Copyright (c) 2015-2017",
-  "date": "2019-07-17T19:06:36.794Z",
+  "date": "2019-07-17T23:44:23.651Z",
   "describe": "",
   "description": "Shim for ToLength.",
   "file": "to-length-x.js",
   "hash": "74e3a7b1c935a178e62d",
   "license": "MIT",
-  "version": "4.0.10"
+  "version": "4.0.11"
 }
 */
 (function webpackUniversalModuleDefinition(root, factory) {

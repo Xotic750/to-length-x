@@ -30,7 +30,7 @@ export function toLength2016(value) {
  * @param {*} value - The value to convert.
  * @returns {number} Returns the converted integer.
  */
-export default function toLength2018(value) {
+const toLength2018 = function toLength2018(value) {
   const len = toInteger(value);
 
   // includes converting -0 to +0
@@ -43,4 +43,6 @@ export default function toLength2018(value) {
   }
 
   return len;
-}
+};
+
+export default toLength2018;

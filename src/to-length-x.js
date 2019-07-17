@@ -1,5 +1,6 @@
 import toInteger, {toInteger2016} from 'to-integer-x';
-import MAX_SAFE_INTEGER from 'max-safe-integer';
+
+const MAX_SAFE_INTEGER = 9007199254740991;
 
 /**
  * Converts `value` to an integer suitable for use as the length of an

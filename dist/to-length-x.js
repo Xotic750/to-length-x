@@ -2,13 +2,13 @@
 {
   "author": "Graham Fairweather",
   "copywrite": "Copyright (c) 2015-2017",
-  "date": "2019-07-17T18:37:15.982Z",
+  "date": "2019-07-17T19:06:36.794Z",
   "describe": "",
   "description": "Shim for ToLength.",
   "file": "to-length-x.js",
-  "hash": "a3a0e967f7d1be9a55b6",
+  "hash": "74e3a7b1c935a178e62d",
   "license": "MIT",
-  "version": "4.0.9"
+  "version": "4.0.10"
 }
 */
 (function webpackUniversalModuleDefinition(root, factory) {
@@ -120,7 +120,7 @@ return /******/ (function(modules) { // webpackBootstrap
 /******/
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 7);
+/******/ 	return __webpack_require__(__webpack_require__.s = 6);
 /******/ })
 /************************************************************************/
 /******/ ([
@@ -131,7 +131,7 @@ return /******/ (function(modules) { // webpackBootstrap
 
 
 var toStr = Object.prototype.toString;
-var hasSymbols = __webpack_require__(4)();
+var hasSymbols = __webpack_require__(3)();
 
 if (hasSymbols) {
 	var symToStr = Symbol.prototype.toString;
@@ -193,15 +193,6 @@ module.exports = function isPrimitive(val) {
 
 "use strict";
 
-module.exports = 9007199254740991;
-
-
-/***/ }),
-/* 3 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
 
 var getDay = Date.prototype.getDay;
 var tryDateObject = function tryDateObject(value) {
@@ -224,14 +215,14 @@ module.exports = function isDateObject(value) {
 
 
 /***/ }),
-/* 4 */
+/* 3 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 /* WEBPACK VAR INJECTION */(function(global) {
 
 var origSymbol = global.Symbol;
-var hasSymbolSham = __webpack_require__(6);
+var hasSymbolSham = __webpack_require__(5);
 
 module.exports = function hasNativeSymbols() {
 	if (typeof origSymbol !== 'function') { return false; }
@@ -242,10 +233,10 @@ module.exports = function hasNativeSymbols() {
 	return hasSymbolSham();
 };
 
-/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(5)))
+/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(4)))
 
 /***/ }),
-/* 5 */
+/* 4 */
 /***/ (function(module, exports) {
 
 var g;
@@ -271,7 +262,7 @@ module.exports = g;
 
 
 /***/ }),
-/* 6 */
+/* 5 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -320,7 +311,7 @@ module.exports = function hasSymbols() {
 
 
 /***/ }),
-/* 7 */
+/* 6 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -391,7 +382,7 @@ var is_primitive = __webpack_require__(1);
 var is_primitive_default = /*#__PURE__*/__webpack_require__.n(is_primitive);
 
 // EXTERNAL MODULE: ./node_modules/is-date-object/index.js
-var is_date_object = __webpack_require__(3);
+var is_date_object = __webpack_require__(2);
 var is_date_object_default = /*#__PURE__*/__webpack_require__.n(is_date_object);
 
 // CONCATENATED MODULE: ./node_modules/to-boolean-x/dist/to-boolean-x.esm.js
@@ -1589,14 +1580,10 @@ var to_integer_x_esm_toInteger2018 = function toInteger2018(value) {
 /* harmony default export */ var to_integer_x_esm = (to_integer_x_esm_toInteger2018);
 
 
-// EXTERNAL MODULE: ./node_modules/max-safe-integer/index.js
-var max_safe_integer = __webpack_require__(2);
-var max_safe_integer_default = /*#__PURE__*/__webpack_require__.n(max_safe_integer);
-
 // CONCATENATED MODULE: ./dist/to-length-x.esm.js
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "toLength2016", function() { return toLength2016; });
 
-
+var MAX_SAFE_INTEGER = 9007199254740991;
 /**
  * Converts `value` to an integer suitable for use as the length of an
  * array-like object. (ES2016).
@@ -1612,8 +1599,8 @@ function toLength2016(value) {
     return 0;
   }
 
-  if (len > max_safe_integer_default.a) {
-    return max_safe_integer_default.a;
+  if (len > MAX_SAFE_INTEGER) {
+    return MAX_SAFE_INTEGER;
   }
 
   return len;
@@ -1633,8 +1620,8 @@ var to_length_x_esm_toLength2018 = function toLength2018(value) {
     return 0;
   }
 
-  if (len > max_safe_integer_default.a) {
-    return max_safe_integer_default.a;
+  if (len > MAX_SAFE_INTEGER) {
+    return MAX_SAFE_INTEGER;
   }
 
   return len;

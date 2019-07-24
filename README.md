@@ -21,60 +21,29 @@
 <a name="module_to-length-x"></a>
 
 ## to-length-x
+
 Shim for ToLength.
 
-**See**: [7.1.15 ToLength ( argument )](http://www.ecma-international.org/ecma-262/6.0/#sec-tolength)  
-**Version**: 3.0.0  
-**Author**: Xotic750 <Xotic750@gmail.com>  
-**License**: [MIT](&lt;https://opensource.org/licenses/MIT&gt;)  
-**Copyright**: Xotic750  
+**See**: [7.1.15 ToLength ( argument )](http://www.ecma-international.org/ecma-262/6.0/#sec-tolength)
 
-* [to-length-x](#module_to-length-x)
-    * [`.toLength`](#module_to-length-x.toLength)
-    * [`.toLength2016`](#module_to-length-x.toLength2016) ⇒ <code>number</code>
-    * [`.toLength2018`](#module_to-length-x.toLength2018) ⇒ <code>number</code>
+### `module.exports(value)` ⇒ <code>\*</code> ⏏
 
-<a name="module_to-length-x.toLength"></a>
+<a name="module_to-length-x"></a>
 
-### `to-length-x.toLength`
-Reference to toLength2018.
+### `to-length-x` ⇒ <code>\*</code>
 
-**Kind**: static property of [<code>to-length-x</code>](#module_to-length-x)  
-<a name="module_to-length-x.toLength2016"></a>
-
-### `to-length-x.toLength2016` ⇒ <code>number</code>
 Converts `value` to an integer suitable for use as the length of an
-array-like object. (ES2016)
+array-like object. (ES2019)
 
 **Kind**: static property of [<code>to-length-x</code>](#module_to-length-x)  
-**Returns**: <code>number</code> - Returns the converted integer.  
+**Returns**: <code>number</code> - Returns the converted integer.
 
-| Param | Type | Description |
-| --- | --- | --- |
+| Param | Type            | Description           |
+| ----- | --------------- | --------------------- |
 | value | <code>\*</code> | The value to convert. |
 
-**Example**  
-```js
-var toLength = require('to-length-x').toLength2016;
-toLength(3); // 3
-toLength(Number.MIN_VALUE); // 0
-toLength(Infinity); // Number.MAX_SAFE_INTEGER
-toLength('3'); // 3
-```
-<a name="module_to-length-x.toLength2018"></a>
+**Example**
 
-### `to-length-x.toLength2018` ⇒ <code>number</code>
-Converts `value` to an integer suitable for use as the length of an
-array-like object. (ES2018)
-
-**Kind**: static property of [<code>to-length-x</code>](#module_to-length-x)  
-**Returns**: <code>number</code> - Returns the converted integer.  
-
-| Param | Type | Description |
-| --- | --- | --- |
-| value | <code>\*</code> | The value to convert. |
-
-**Example**  
 ```js
 var toLength = require('to-length-x').toLength2018;
 toLength(3); // 3

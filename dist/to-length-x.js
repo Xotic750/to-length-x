@@ -2,13 +2,13 @@
 {
   "author": "Graham Fairweather",
   "copywrite": "Copyright (c) 2015-2017",
-  "date": "2019-07-27T13:58:06.261Z",
+  "date": "2019-07-27T14:15:59.759Z",
   "describe": "",
   "description": "Shim for ToLength.",
   "file": "to-length-x.js",
-  "hash": "07a746540c52429408c2",
+  "hash": "33b27e64786f207f0d90",
   "license": "MIT",
-  "version": "4.0.24"
+  "version": "4.0.25"
 }
 */
 (function webpackUniversalModuleDefinition(root, factory) {
@@ -1253,8 +1253,6 @@ var binaryRadix = 2;
 var octalRadix = 8;
 var testCharsCount = 2;
 var to_number_x_esm_ERROR_MESSAGE = 'Cannot convert a Symbol value to a number';
-/** @type {NumberConstructor} */
-
 var to_number_x_esm_castNumber = testCharsCount.constructor;
 var pStrSlice = to_number_x_esm_ERROR_MESSAGE.slice;
 var binaryRegex = /^0b[01]+$/i;

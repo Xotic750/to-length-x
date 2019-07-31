@@ -2,7 +2,7 @@
 {
   "author": "Graham Fairweather",
   "copywrite": "Copyright (c) 2015-2017",
-  "date": "2019-07-31T15:55:55.953Z",
+  "date": "2019-07-31T17:24:46.961Z",
   "describe": "",
   "description": "Shim for ToLength.",
   "file": "to-length-x.js",

@@ -1,6 +1,6 @@
 {
   "name": "to-length-x",
-  "version": "4.1.0",
+  "version": "4.2.0",
   "description": "Shim for ToLength.",
   "homepage": "https://github.com/Xotic750/to-length-x",
   "author": {
@@ -50,7 +50,7 @@
     "url": "https://github.com/Xotic750/to-length-x/issues"
   },
   "dependencies": {
-    "to-integer-x": "^4.1.0"
+    "to-integer-x": "^4.2.0"
   },
   "devDependencies": {
     "@babel/cli": "^7.5.5",
